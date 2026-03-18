@@ -13,7 +13,7 @@ const SectionContainer = forwardRef<HTMLElement, SectionContainerProps>(
         id={id}
         className={`px-6 py-32 sm:px-8 lg:px-10 ${className}`}
       >
-        <div className="mx-auto max-w-7xl">{children}</div>
+        <div className="mx-auto max-w-8xl">{children}</div>
       </section>
     );
   },
