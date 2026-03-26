@@ -56,6 +56,7 @@ function StorySection() {
   return (
     <SectionContainer
       ref={sectionRef}
+      id="story"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}

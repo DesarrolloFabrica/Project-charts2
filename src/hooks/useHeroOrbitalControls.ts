@@ -223,18 +223,7 @@ function useHeroOrbitalControls({ isStoryActiveRef }: UseHeroOrbitalControlsArgs
 
     const onPointerMove = (e: PointerEvent<HTMLElement>) => {
       if (!isDraggingRef.current) {
-        // aun si no hay drag, actualizamos parallax con pointer move del showcase (sensación premium)
-        if (!isReducedMotion) {
-          const el = e.currentTarget;
-          const rect = el.getBoundingClientRect();
-          const cx = rect.left + rect.width / 2;
-          const cy = rect.top + rect.height / 2;
-          const dx = (e.clientX - cx) / rect.width;
-          const dy = (e.clientY - cy) / rect.height;
-          const clamp = (v: number, a: number) => Math.max(-a, Math.min(a, v));
-          parallaxRef.current.x = clamp(dx, 0.45);
-          parallaxRef.current.y = clamp(dy, 0.35);
-        }
+        // Sin drag, mantenemos la tarjeta estática (sin parallax por movimiento del mouse).
         return;
       }
 

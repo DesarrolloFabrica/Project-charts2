@@ -125,6 +125,7 @@ function ManifestSection() {
   return (
     <SectionContainer
       ref={sectionRef}
+      id="manifest"
       // Cambiamos a la base ultra oscura #030014
       className="relative min-h-screen overflow-hidden border-y border-white/5 bg-[#030014] flex items-center py-24"
     >

@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
-import DifferentiatorSection from "../sections/DifferentiatorSection";
 import FeaturesSection from "../sections/FeaturesSection";
-import FinalCTASection from "../sections/FinalCTASection";
+import FinalCtaSection from "../sections/final/FinalCtaSection";
+import FooterSection from "../sections/footer/FooterSection";
 import HeroSection from "../sections/HeroSection";
 import ManifestSection from "../sections/ManifestSection";
 import StorySection from "../sections/StorySection";
@@ -19,8 +19,8 @@ function PageShell() {
         <ManifestSection />
         <StorySection />
         <FeaturesSection />
-        <DifferentiatorSection />
-        <FinalCTASection />
+        <FinalCtaSection />
+        <FooterSection />
       </main>
     </div>
   );

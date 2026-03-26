@@ -154,6 +154,7 @@ function FeatureNetworkSection() {
   return (
     <SectionContainer
       ref={sectionRef}
+      id="features"
       className="relative overflow-visible border-t border-cyan-500/10 bg-[#02040A] py-20 lg:py-24"
     >
       <div className="pointer-events-none absolute inset-0">

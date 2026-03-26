@@ -54,7 +54,6 @@ function HeroSection() {
     velocityRef,
     isDraggingRef,
     parallaxRef,
-    bindHeroParallax,
     bindShowcaseDrag,
     goPrev,
     goNext,
@@ -224,8 +223,6 @@ function HeroSection() {
       id="hero"
       // Igualamos el color base al resto de la web
       className="relative min-h-screen overflow-visible bg-[#030014]"
-      onPointerMove={bindHeroParallax.onPointerMove}
-      onPointerLeave={bindHeroParallax.onPointerLeave}
     >
       {/* --- FONDOS Y EFECTOS: Z-0 PARA GARANTIZAR VISIBILIDAD --- */}
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">

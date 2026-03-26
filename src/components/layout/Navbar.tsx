@@ -1,5 +1,10 @@
 function Navbar() {
-  const navItems = ['Platform', 'Features', 'Solutions', 'Pricing'];
+  const navItems = [
+    { label: "Platform", href: "#hero" },
+    { label: "Features", href: "#features" },
+    { label: "Solutions", href: "#manifest" },
+    { label: "Pricing", href: "#final-cta" },
+  ];
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
@@ -19,11 +24,11 @@ function Navbar() {
         <div className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               className="text-xs font-semibold uppercase tracking-widest text-gray-400 transition-all duration-300 hover:text-cyan-400 hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>
